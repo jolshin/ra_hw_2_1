@@ -6,3 +6,4 @@ test('renders Websites item of the Toolbar', () => {
   const linkElement = screen.getByText(/Websites/i);
   expect(linkElement).toBeInTheDocument();
 });
+
