@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+
+.cards {
+  column-count: 3;
+  column-gap: 10px;
+}
+
+.card {
+  margin: 0;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  margin-bottom: 10px;
+  break-inside: avoid;
+}
+
+.card > img {
+  grid-row: 1 / -1;
+  grid-column: 1;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+
+}
