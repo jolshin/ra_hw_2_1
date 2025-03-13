@@ -1,6 +1,6 @@
 function Toolbar({ filters, selected, onSelectFilter }) {
   return (
-    <div>
+    <div className="toolbar">
       {filters.map((filter) => (
         <button
           key={filter}

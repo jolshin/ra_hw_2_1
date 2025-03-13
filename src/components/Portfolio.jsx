@@ -15,7 +15,7 @@ export default class Portfolio extends React.Component {
 
   render() {
     return (
-      <>
+      <div className="container">
         <Toolbar
           filters={this.filters}
           selected={this.state.filter}
@@ -24,7 +24,7 @@ export default class Portfolio extends React.Component {
           }}
         />
         <ProjectList selected={this.state.filter} />
-      </>
+      </div>
     );
   }
 }
